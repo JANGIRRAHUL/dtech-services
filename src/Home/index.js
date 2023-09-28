@@ -11,7 +11,7 @@ const cardDetails = [
 ]
 
 const Home = () => (
-  <div>
+  <div className="main-container">
     <div className="upper-container d-flex flex-column align-items-center justify-content-center">
       <div className="text-white d-flex justify-content-center align-items-center mt-5">
         <h1 className="main-heading text-center">DTS: Precision in Telecom, Signaling, <br/> Solar.</h1>
@@ -36,7 +36,12 @@ const Home = () => (
         Metros, Factories, Offices, and more.
       </p>
     </div>
-    <div className="d-flex flex-row justify-content-around border border-black">
+    <div className="d-flex flex-wrap justify-content-center p-5 border border-black">
+      <div className="lower-container fs-3 fw-bold m-4 d-flex justify-content-center card" style={{ width: "20rem" }}>
+        <p className="text-center">
+        DTech Services (DTS) stands out as a complete solution partner that integrates Telecom, Signaling, and Power Infrastructure services.
+        </p>
+      </div>
       {cardDetails.map((value,index) => {
         return(<Card key={index} prop={value}/>)
       })}
