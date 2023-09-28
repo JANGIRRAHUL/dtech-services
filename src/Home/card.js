@@ -1,9 +1,8 @@
 const Card = ({prop}) => {
     const {name} = prop
   return (
-    <div className="d-flex w-25 flex-column col-3 border border-black">
     <div
-      className="card"
+      className="card m-4"
       style={{ width: "20rem" }}
     >
       <img
@@ -21,7 +20,6 @@ const Card = ({prop}) => {
           Go somewhere
         </a>
       </div>
-    </div>
     </div>
   );
 };
