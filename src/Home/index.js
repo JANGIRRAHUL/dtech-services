@@ -25,7 +25,7 @@ const Home = () => (
         </ul>
       </div>
     </div>
-    <div className="lower-container fs-6 fw-bold mt-5 d-flex justify-content-center">
+    <div className="lower-container fs-5 fw-bold mt-5 d-flex justify-content-center">
       <p className="text-center">
         DTech Services stands out in the Telecom, Signaling, and Power Infra
         industries by offering comprehensive, end-to-end solutions <br/>  that 
@@ -36,9 +36,9 @@ const Home = () => (
         Metros, Factories, Offices, and more.
       </p>
     </div>
-    <div className="d-flex flex-wrap justify-content-center p-5 border border-black">
-      <div className="lower-container fs-3 fw-bold m-4 d-flex justify-content-center card" style={{ width: "20rem" }}>
-        <p className="text-center">
+    <div className="d-flex flex-wrap justify-content-center p-5">
+      <div className="lower-container fs-3 fw-bold m-5 d-flex justify-content-center align-content-center" style={{ width: "20rem" }}>
+        <p className="text-left mx-3">
         DTech Services (DTS) stands out as a complete solution partner that integrates Telecom, Signaling, and Power Infrastructure services.
         </p>
       </div>

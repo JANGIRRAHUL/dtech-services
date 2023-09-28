@@ -15,7 +15,7 @@ const headerLink = [
 const Header = () => {
   return (
     <nav
-      className="navbar navbar-expand-lg navbar-light px-3 border border-bottom"
+      className="navbar navbar-expand-lg navbar-light px-3"
       style={{ backgroundColor: "#000080" }}
     >
       <div className="container-fluid px-5">

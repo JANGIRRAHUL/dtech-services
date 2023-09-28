@@ -2,7 +2,7 @@ const Card = ({prop}) => {
     const {name} = prop
   return (
     <div
-      className="card m-4"
+      className="card m-5 shadow"
       style={{ width: "20rem" }}
     >
       <img
