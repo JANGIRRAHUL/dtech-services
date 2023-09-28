@@ -34,9 +34,9 @@ const Contact = () => (
   <>
     <div className="contactUs">
       <div className="h-[calc(100vh-94px)] w-screen flex justify-center items-center bg-[url('./../images/7387.jpg')]">
-        <div className="h-[800px] flex justify-center items-center gap-5 backdrop-blur-md ">
-          <div className="gap-5 flex flex-col">
-            <div className="h-72 w-[480px] p-10 bg-slate-900 rounded-xl shadow-2xl flex justify-between items-center">
+        <div className="flex justify-center items-center sm:gap-2 xl:gap-5 backdrop-blur-md ">
+          <div className="sm:gap-2 xl:gap-5 flex flex-col">
+            <div className="h-72 w-[480px] p-10 bg-black rounded-xl shadow-2xl xl:flex justify-between items-center sm:hidden">
               <div className="flex items-center gap-3">
                 <div className="">
                   <img className="h-16 w-16 rounded-full" src={logoImg} alt="" />
@@ -44,7 +44,7 @@ const Contact = () => (
                 <h1 className="font-thin text-3xl text-white"><span className="font-bold">D-Tech</span> Services</h1>
               </div>
             </div>
-            <div className="h-72 w-[480px] p-10 bg-white rounded-xl shadow-2xl flex justify-between border-black border scl">
+            <div className="h-72 w-[480px] p-10 bg-white rounded-xl shadow-2xl flex justify-between border-black border">
               <div className="h-full flex flex-col justify-between">
                 <div>
                   <h1 className="font-thin text-3xl"><span className="font-bold">UTTAM</span> KUMAR</h1>
@@ -72,49 +72,51 @@ const Contact = () => (
               </div>
             </div>
           </div>
-          <div className="w-[500px] border border-black bg-white p-8 rounded-lg shadow-xl">
+          <div className="w-[500px] border border-black bg-white p-8 py-14 rounded-lg shadow-xl">
             <h1 className="text-2xl text-center">WE ARE HERE TO HELP YOU !</h1>
             <div className="">
-              <form>
-                <div className="form-row">
-                  <div className="col-md-4 mb-3 w-full">
-                    <label htmlFor="validationServer01">Name</label>
-                    <input
-                      type="text"
-                      className="form-control border border-primary"
-                      id="validationServer01"
-                      placeholder="Someone"
-                      defaultValue=""
-                      required=""
-                    />
+              <form className="">
+                <div className="flex sm:flex-row xl:flex-col sm:gap-4 xl:gap-0">
+                  <div className="form-row">
+                    <div className="col-md-4 mb-2 w-full">
+                      <label htmlFor="validationServer01">Name</label>
+                      <input
+                        type="text"
+                        className="form-control border border-primary"
+                        id="validationServer01"
+                        placeholder="Someone"
+                        defaultValue=""
+                        required=""
+                      />
+                    </div>
+                    <div className="col-md-4 mb-2 w-full">
+                      <label htmlFor="validationServer02">Email</label>
+                      <input
+                        type="email"
+                        className="form-control border border-primary"
+                        id="validationServer02"
+                        placeholder="abc@domain.com"
+                        defaultValue=""
+                        required=""
+                      />
+                    </div>
+                    <div className="col-md-4 mb-2 w-full">
+                      <label htmlFor="validationServer04">Contact No</label>
+                      <input
+                        type="email"
+                        className="form-control border border-primary"
+                        id="validationServer04"
+                        placeholder="+91 XXXXX-XXXXX"
+                        defaultValue=""
+                        required=""
+                      />
+                    </div>
                   </div>
-                  <div className="col-md-4 mb-3 w-full">
-                    <label htmlFor="validationServer02">Email</label>
-                    <input
-                      type="email"
-                      className="form-control border border-primary"
-                      id="validationServer02"
-                      placeholder="abc@domain.com"
-                      defaultValue=""
-                      required=""
-                    />
-                  </div>
-                  <div className="col-md-4 mb-3 w-full">
-                    <label htmlFor="validationServer04">Contact No</label>
-                    <input
-                      type="email"
-                      className="form-control border border-primary"
-                      id="validationServer04"
-                      placeholder="+91 XXXXX-XXXXX"
-                      defaultValue=""
-                      required=""
-                    />
-                  </div>
-                </div>
-                <div className="form-row">
-                  <div className="col-md-6 mb-3 w-full">
-                    <label htmlFor="validationServer03">Quary</label>
-                    <textarea name="" id="" cols="30" rows="8" className="form-control border border-primary"></textarea>
+                  <div className="form-row">
+                    <div className="col-md-6 mb-3 w-full">
+                      <label htmlFor="validationServer03">Quary</label>
+                      <textarea name="" id="" cols="30" rows="6" className="form-control border border-primary"></textarea>
+                    </div>
                   </div>
                 </div>
                 <button className="btn btn-primary" type="submit">
