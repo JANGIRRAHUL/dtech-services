@@ -1,12 +1,6 @@
-.container1{
-    background-image: url('https://res.cloudinary.com/dg4htpr73/image/upload/v1695918170/istockphoto-1320974340-1024x1024-transformed_uspsab.jpg');
-    height: 86vh;
-    background-color: aqua;
-}
-.list {
-    list-style: none;
-    color: #D9D9D9;
-}
-.heading{
-    color: #D9D9D9;
+
+
+.contactUs {
+    @tailwind utilities;
+
 }
