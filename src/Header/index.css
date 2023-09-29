@@ -1,3 +1,10 @@
+html, body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative
+  }
+
 .glow-on-hover {
     width: 100px;
     height: 40px;
