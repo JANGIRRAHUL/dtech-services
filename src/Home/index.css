@@ -1,3 +1,10 @@
+html, body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative
+  }
+
 .main-container {
     font-family: "serif";
 }

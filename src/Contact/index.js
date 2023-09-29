@@ -5,7 +5,7 @@ import { faEnvelope } from "@fortawesome/fontawesome-free-solid";
 import logoImg from './../images/earth-globe-with-continents-maps_44536.png'
 import "bootstrap/dist/css/bootstrap.css";
 
-import "./index.css";
+// import "./index.css";
 
 import ContactInfo from "./contactinfo";
 
