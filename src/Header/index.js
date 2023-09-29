@@ -4,19 +4,19 @@ import HeaderLink from "./link.js";
 import "bootstrap/dist/css/bootstrap.css";
 
 const headerLink = [
-  { name: "Home", to: "/" },
-  { name: "About Us", to: "/about" },
-  { name: "Projects", to: "/projects" },
-  { name: "Services", to: "/services" },
-  { name: "Team", to: "/team" },
-  { name: "Contact", to: "/contact" },
+  { name: "HOME", to: "/" },
+  { name: "ABOUT", to: "/about" },
+  { name: "PROJECTS", to: "/projects" },
+  { name: "SERVICES", to: "/services" },
+  { name: "TEAM", to: "/team" },
+  { name: "CONTACT", to: "/contact" },
 ];
 
 const Header = () => {
   return (
     <nav
-      className="navbar navbar-expand-lg navbar-light px-3"
-      style={{ backgroundColor: "#000080" }}
+      className="navbar navbar-expand-lg navbar-light px-3 d-flex w-100 position-fixed"
+      style={{ backgroundColor: "#ffffff", zIndex: 10 , fontFamily: "'Poppins',sans-serif"}}
     >
       <div className="container-fluid px-5">
         <div>
@@ -28,9 +28,9 @@ const Header = () => {
                   alt="dtech services"
                   height={50}
                   width={50}
-                  className="logo"
+                  className="logo mb-2"
                 />
-                <span className="ms-2" style={{ color: "#D9D9D9" }}>
+                <span className="ms-3 fs-2 m-1" style={{ color: "#0e84cc" }}>
                   DTech Services
                 </span>
               </Link>
