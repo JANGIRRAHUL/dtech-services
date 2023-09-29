@@ -7,8 +7,6 @@ import "bootstrap/dist/css/bootstrap.css";
 
 import "./index.css";
 
-import ContactInfo from "./contactinfo";
-
 const contactInfo = [
   {
     name: "Registered Office Address:",
@@ -33,10 +31,10 @@ const contactInfo = [
 const Contact = () => (
   <>
     <div className="contactUs">
-      <div className="w-screen flex justify-center items-center bg-[url('./../images/7387.jpg')]">
-        <div className="flex flex-col sm:gap-2 xl:gap-5 ">
-          <div className="gap-[calc(100vh-27rem-50px)] flex flex-col mt-[calc(50vh-9rem-50px)]">
-            <div className="h-72 w-[480px] p-10 bg-black rounded-xl shadow-2xl flex justify-between items-center">
+      <div className="w-screen flex justify-center items-center">
+        <div className="flex flex-col">
+          <div className="flex justify-center items-center bg-[url('./../images/bg1.jpg')] bg-cover h-[calc(100vh-100px)] w-screen">
+            <div className="h-72 w-[480px] p-10 bg-black rounded-xl shadow-2xl shadow-black flex justify-between items-center">
               <div className="flex items-center gap-3">
                 <div className="">
                   <img className="h-16 w-16 rounded-full" src={logoImg} alt="" />
@@ -44,7 +42,9 @@ const Contact = () => (
                 <h1 className="font-thin text-3xl text-white"><span className="font-bold">D-Tech</span> Services</h1>
               </div>
             </div>
-            <div className="h-72 w-[480px] p-10 bg-white rounded-xl shadow-2xl flex justify-between border-black border">
+          </div>
+          <div className="flex justify-center items-center bg-[url('./../images/bg2.jpg')] bg-cover h-[calc(100vh-100px)] w-screen">
+            <div className="h-72 w-[480px] p-10 bg-white rounded-xl shadow-2xl  shadow-black flex justify-between border-black border">
               <div className="h-full flex flex-col justify-between">
                 <div>
                   <h1 className="font-thin text-3xl"><span className="font-bold">UTTAM</span> KUMAR</h1>
@@ -72,57 +72,59 @@ const Contact = () => (
               </div>
             </div>
           </div>
-          <div className="w-[480px] border border-black bg-white p-8 py-14 rounded-lg shadow-xl mt-[calc(100vh-18rem-100px)] mb-36">
-            <h1 className="text-2xl text-center">WE ARE HERE TO HELP YOU !</h1>
-            <div className="">
-              <form className="">
-                <div className="flex flex-col gap-0">
-                  <div className="form-row">
-                    <div className="col-md-4 mb-2 w-full">
-                      <label htmlFor="validationServer01">Name</label>
-                      <input
-                        type="text"
-                        className="form-control border border-primary"
-                        id="validationServer01"
-                        placeholder="Someone"
-                        defaultValue=""
-                        required=""
-                      />
+          <div className="flex justify-center items-center bg-[url('./../images/bg3.jpg')] bg-cover h-[calc(100vh-100px)] w-screen">
+            <div className="w-[480px] border border-black bg-white p-8 py-14 rounded-lg shadow-xl  shadow-black">
+              <h1 className="text-2xl text-center">WE ARE HERE TO HELP YOU !</h1>
+              <div className="">
+                <form className="">
+                  <div className="flex flex-col gap-0">
+                    <div className="form-row">
+                      <div className="col-md-4 mb-2 w-full">
+                        <label htmlFor="validationServer01">Name</label>
+                        <input
+                          type="text"
+                          className="form-control border border-primary"
+                          id="validationServer01"
+                          placeholder="Someone"
+                          defaultValue=""
+                          required=""
+                        />
+                      </div>
+                      <div className="col-md-4 mb-2 w-full">
+                        <label htmlFor="validationServer02">Email</label>
+                        <input
+                          type="email"
+                          className="form-control border border-primary"
+                          id="validationServer02"
+                          placeholder="abc@domain.com"
+                          defaultValue=""
+                          required=""
+                        />
+                      </div>
+                      <div className="col-md-4 mb-2 w-full">
+                        <label htmlFor="validationServer04">Contact No</label>
+                        <input
+                          type="email"
+                          className="form-control border border-primary"
+                          id="validationServer04"
+                          placeholder="+91 XXXXX-XXXXX"
+                          defaultValue=""
+                          required=""
+                        />
+                      </div>
                     </div>
-                    <div className="col-md-4 mb-2 w-full">
-                      <label htmlFor="validationServer02">Email</label>
-                      <input
-                        type="email"
-                        className="form-control border border-primary"
-                        id="validationServer02"
-                        placeholder="abc@domain.com"
-                        defaultValue=""
-                        required=""
-                      />
-                    </div>
-                    <div className="col-md-4 mb-2 w-full">
-                      <label htmlFor="validationServer04">Contact No</label>
-                      <input
-                        type="email"
-                        className="form-control border border-primary"
-                        id="validationServer04"
-                        placeholder="+91 XXXXX-XXXXX"
-                        defaultValue=""
-                        required=""
-                      />
+                    <div className="form-row">
+                      <div className="col-md-6 mb-3 w-full">
+                        <label htmlFor="validationServer03">Quary</label>
+                        <textarea name="" id="" cols="30" rows="6" className="form-control border border-primary"></textarea>
+                      </div>
                     </div>
                   </div>
-                  <div className="form-row">
-                    <div className="col-md-6 mb-3 w-full">
-                      <label htmlFor="validationServer03">Quary</label>
-                      <textarea name="" id="" cols="30" rows="6" className="form-control border border-primary"></textarea>
-                    </div>
-                  </div>
-                </div>
-                <button className="btn btn-primary" type="submit">
-                  Submit
-                </button>
-              </form>
+                  <button className="btn btn-primary" type="submit">
+                    Submit
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
