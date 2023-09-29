@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/dtech-services/static/css/main.e202ddc0.css",
+    "main.js": "/dtech-services/static/js/main.654b5ed8.js",
+    "static/media/7387.jpg": "/dtech-services/static/media/7387.df4290f59b49bc13a89a.jpg",
+    "static/media/earth-globe-with-continents-maps_44536.png": "/dtech-services/static/media/earth-globe-with-continents-maps_44536.59d30a5486cfb34922b4.png",
+    "index.html": "/dtech-services/index.html",
+    "main.e202ddc0.css.map": "/dtech-services/static/css/main.e202ddc0.css.map",
+    "main.654b5ed8.js.map": "/dtech-services/static/js/main.654b5ed8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e202ddc0.css",
+    "static/js/main.654b5ed8.js"
+  ]
+}
