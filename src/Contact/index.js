@@ -33,10 +33,10 @@ const contactInfo = [
 const Contact = () => (
   <>
     <div className="contactUs">
-      <div className="h-[calc(100vh-94px)] w-screen flex justify-center items-center bg-[url('./../images/7387.jpg')]">
-        <div className="flex justify-center items-center sm:gap-2 xl:gap-5 backdrop-blur-md ">
-          <div className="sm:gap-2 xl:gap-5 flex flex-col">
-            <div className="h-72 w-[480px] p-10 bg-black rounded-xl shadow-2xl xl:flex justify-between items-center sm:hidden">
+      <div className="w-screen flex justify-center items-center bg-[url('./../images/7387.jpg')]">
+        <div className="flex flex-col sm:gap-2 xl:gap-5 ">
+          <div className="gap-[calc(100vh-27rem-50px)] flex flex-col mt-[calc(50vh-9rem-50px)]">
+            <div className="h-72 w-[480px] p-10 bg-black rounded-xl shadow-2xl flex justify-between items-center">
               <div className="flex items-center gap-3">
                 <div className="">
                   <img className="h-16 w-16 rounded-full" src={logoImg} alt="" />
@@ -72,11 +72,11 @@ const Contact = () => (
               </div>
             </div>
           </div>
-          <div className="w-[500px] border border-black bg-white p-8 py-14 rounded-lg shadow-xl">
+          <div className="w-[480px] border border-black bg-white p-8 py-14 rounded-lg shadow-xl mt-[calc(100vh-18rem-100px)] mb-36">
             <h1 className="text-2xl text-center">WE ARE HERE TO HELP YOU !</h1>
             <div className="">
               <form className="">
-                <div className="flex sm:flex-row xl:flex-col sm:gap-4 xl:gap-0">
+                <div className="flex flex-col gap-0">
                   <div className="form-row">
                     <div className="col-md-4 mb-2 w-full">
                       <label htmlFor="validationServer01">Name</label>
