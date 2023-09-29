@@ -3,7 +3,7 @@ import "./index.css"
 
 const cardDetails = [
   {name:"Excels in the Telecom, Signaling, and Power Infrastructure sectors", url:"https://res.cloudinary.com/dg4htpr73/image/upload/v1696007960/istockphoto-187567068-1024x1024-transformed_gb5dom.jpg"},  
-  {name:"Power Infrastructure solutions, and innovative electricity cost reduction strategies.", url:"https://res.cloudinary.com/dg4htpr73/image/upload/v1696007173/wallpaperflare.com_wallpaper_7_1_lfcfst.jpg"},  
+  {name:"Power Infra solutions, and innovative electricity cost reduction strategies.", url:"https://res.cloudinary.com/dg4htpr73/image/upload/v1696007173/wallpaperflare.com_wallpaper_7_1_lfcfst.jpg"},  
   {name:"Telecom solutions, RF surveys and support for GSM/GSM-R systems", url:"https://res.cloudinary.com/dg4htpr73/image/upload/v1696008267/2482029_iitmm4.jpg"},  
   {name:"Deliver innovative, budget-compliant solutions and top-notch quality standards.", url:"https://res.cloudinary.com/dg4htpr73/image/upload/v1696009175/hand-using-touch-screen_il31xz.jpg"},  
   {name:"Providing installation, commissioning, and maintenance for signaling equipment", url:"https://res.cloudinary.com/dg4htpr73/image/upload/v1696006655/wallpaperflare.com_wallpaper_3_lltrdq_1_hppqgx.jpg"},  
@@ -26,7 +26,7 @@ const Home = () => (
       </div>
     </div>
     <div className="lower-container fs-5 fw-bold mt-5 mx-3 d-flex justify-content-center">
-      <p className="text-center">
+      <p className="text-center mx-3">
         DTech Services stands out in the Telecom, Signaling, and Power Infra
         industries by offering comprehensive, end-to-end solutions that 
         encompass supply, installation, commissioning, and ongoing maintenance
@@ -37,7 +37,7 @@ const Home = () => (
       </p>
     </div>
     <div className="d-flex flex-wrap justify-content-center p-5 h-100 w-100">
-      <div className="lower-container fs-3 fw-bold m-3 d-flex justify-content-center align-content-center" style={{ width: "30vw", height:"45vh" }}>
+      <div className="lower-container fs-3 fw-bold m-3 d-flex justify-content-center align-content-center" style={{ width: "25vw", height:"45vh" }}>
         <p className="text-left mx-3">
         DTech Services (DTS) stands out as a complete solution partner that integrates Telecom, Signaling, and Power Infrastructure services.
         </p>

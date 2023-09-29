@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.css";
 
-// import "./index.css";
+import "./index.css";
 
 const ContactInfo = ({ prop }) => {
   const { value, icon } = prop;
