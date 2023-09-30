@@ -5,10 +5,10 @@ import "bootstrap/dist/css/bootstrap.css";
 
 const headerLink = [
   { name: "HOME", to: "/" },
-  { name: "ABOUT", to: "/about" },
   { name: "PROJECTS", to: "/projects" },
-  { name: "SERVICES", to: "/services" },
   { name: "TEAM", to: "/team" },
+  { name: "SERVICES", to: "/services" },
+  { name: "ABOUT", to: "/about" },
   { name: "CONTACT", to: "/contact" },
 ];
 
@@ -20,17 +20,17 @@ const Header = () => {
     >
       <div className="container-fluid px-5">
         <div>
-          <ul className="navbar-brand navbar-nav ms-auto mb-2 mb-lg-0">
-            <li className="nav-item mx-2">
-              <Link className="nav-link fw-bold text-secondary" to="/">
+          <ul className="navbar-brand navbar-nav ms-auto m-0 p-0">
+            <li className="nav-item d-flex justify-content-center align-content-center">
+              <Link className="nav-link fw-bold text-secondary d-flex justify-content-center align-content-center align-items-center flex-inherit flex-row" to="/">
                 <img
                   src="https://res.cloudinary.com/dg4htpr73/image/upload/v1695880590/Dtech_Services_cnqugr.jpg"
                   alt="dtech services"
                   height={50}
                   width={50}
-                  className="logo mb-2"
+                  className="logo"
                 />
-                <span className="ms-3 fs-2 m-1" style={{ color: "#0e84cc" }}>
+                <span className="fs-2" style={{ color: "#0e84cc" }}>
                   DTech Services
                 </span>
               </Link>

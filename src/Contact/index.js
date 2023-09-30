@@ -6,11 +6,6 @@ import logoImg from './../images/earth-globe-with-continents-maps_44536.png'
 import "bootstrap/dist/css/bootstrap.css";
 
 import "./index.css";
-<<<<<<< HEAD
-
-import ContactInfo from "./contactinfo";
-=======
->>>>>>> 236b1dc6e2191d4eb4b3a0bec17329fd88b56497
 
 const contactInfo = [
   {
