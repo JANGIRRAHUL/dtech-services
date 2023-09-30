@@ -13,7 +13,7 @@ const About = () => (
         <p className="text-center" style={{fontSize:"1.5em", width: "75vw"}}>DTech Services has a proud history of accomplishment that has facilitated our continued growth over the last few years. At our core, we value our people & our clients, and celebrate the success of both.</p>
       </div>
     </div>
-    <div className="d-flex flex-column align-content-center" style={{backgroundColor: "#abb8c3", height: "100vh"}}>
+    <div className="d-flex flex-column align-content-center" style={{backgroundColor: "#e6f0f2", height: "100vh"}}>
         <div className="d-flex justify-content-center aligh-content-center" style={{color:"#0e84cc"}}>
           <h2 className="fw-semibold" style={{marginTop:"2vh"}}>Our People</h2>
         </div>

@@ -58,7 +58,7 @@ const Contact = () => (
                   {
                     contactInfo.map((v, i) => {
                       return (
-                        <h3 className="text-xs flex gap-3">
+                        <h3 key={i} className="text-xs flex gap-3">
                           <span className="text-sm flex justify-center items-center">{v.icon}</span>
                           <span className="w-52">{v.value}</span>
                         </h3>

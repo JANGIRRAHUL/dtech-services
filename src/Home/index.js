@@ -36,7 +36,7 @@ const Home = () => (
         Metros, Factories, Offices, and more.
       </p>
     </div>
-    <div className="d-flex flex-wrap justify-content-center p-5 h-100 w-100">
+    <div className="d-flex flex-wrap justify-content-center p-5 h-100 w-100 border border-black">
       <div className="lower-container fs-3 fw-bold m-3 d-flex justify-content-center align-content-center" style={{ width: "25vw", height:"45vh" }}>
         <p className="text-left mx-3">
         DTech Services (DTS) stands out as a complete solution partner that integrates Telecom, Signaling, and Power Infrastructure services.

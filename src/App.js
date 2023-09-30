@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation, useParams } from "react-router-dom";
 
 import About from "./About";
 import Header from "./Header";
@@ -8,8 +8,18 @@ import Services from "./Services";
 import Projects from "./Projects";
 import Team from "./Team";
 import NotFound from "./NotFound";
+import Footer from "./Footer";
+import { useEffect } from "react";
 
 function App() {
+  let link = useLocation()
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "instant"
+    });
+  }, [link])
+
   return (
     <div>
       <Header />
@@ -22,6 +32,7 @@ function App() {
         <Route exact path="/team" Component={Team} />
         <Route Component={NotFound} />
       </Routes>
+      <Footer />
     </div>
   );
 }

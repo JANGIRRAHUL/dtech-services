@@ -1,10 +1,6 @@
 const Projects = () => (
-  <div>
-    <img
-      src="https://assets.ccbp.in/frontend/react-js/contact-blog-img.png"
-      alt="contact"
-    />
-    <h1>Projects</h1>
+  <div className="d-flex ">
+    <div className="h-25 w-25 bg-secondary h-100">1</div>
   </div>
 );
 

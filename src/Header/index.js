@@ -3,6 +3,8 @@ import HeaderLink from "./link.js";
 
 import "bootstrap/dist/css/bootstrap.css";
 
+import "./index.css"
+
 const headerLink = [
   { name: "HOME", to: "/" },
   { name: "PROJECTS", to: "/projects" },
@@ -14,9 +16,10 @@ const headerLink = [
 
 const Header = () => {
   return (
+    <div className="d-flex" style={{ fontFamily: "'Poppins',sans-serif"}}>
     <nav
       className="navbar navbar-expand-lg navbar-light px-3 d-flex w-100 position-fixed shadow"
-      style={{ backgroundColor: "#ffffff", zIndex: 10 , fontFamily: "'Poppins',sans-serif"}}
+      style={{ backgroundColor: "#ffffff", zIndex: 10 }}
     >
       <div className="container-fluid px-5">
         <div>
@@ -49,6 +52,7 @@ const Header = () => {
         </div>
       </div>
     </nav>
+    </div>
   );
 };
 
