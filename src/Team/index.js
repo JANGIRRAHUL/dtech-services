@@ -1,5 +1,7 @@
+import { useEffect } from 'react';
 import './index.css';
 import TeamCard from './teamCard';
+import { useState } from 'react';
 
 let teamData = [
   {
@@ -105,24 +107,24 @@ let teamData = [
 
 
 const Team = () => {
+  const [teamDataArr, setTeamDataArr] = useState([])
+  const [count, setCount] = useState(0)
 
-
-
+  let limit = 3;
+  useEffect(() => {
+    setTeamDataArr(teamData.slice(count, limit + count));
+  }, [1, count]);
 
   return (
     <div className="team">
-      <img
-        src="https://assets.ccbp.in/frontend/react-js/contact-blog-img.png"
-        alt="contact"
-      />
-      <h1>Team</h1>
-
-      <div className="flex p-2">
-        {teamData.map((eachTeam) => {
+      <div className="flex flex-wrap p-10 m-10 bg-[#E1EAFF]">
+        <button className="bg-[#2563EB] text-white px-4 py-2 rounded-md" onClick={() => { setCount(count - 1) }}>Previous</button>
+        {teamDataArr.map((eachTeam, i) => {
           return (
-            <TeamCard eachTeam={eachTeam} />
+            <TeamCard key={i} eachTeam={eachTeam} i={i} />
           )
         })}
+        <button className="bg-[#2563EB] text-white px-4 py-2 rounded-md" onClick={() => { setCount(count + 1) }}>Next</button>
       </div>
     </div>)
 };
