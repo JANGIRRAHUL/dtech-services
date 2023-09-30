@@ -28,7 +28,7 @@ function App() {
         <Route exact path="/dtech-services" Component={Home} />
         <Route exact path="/about" Component={About} />
         <Route exact path="/contact" Component={Contact} />
-        <Route exact path="/services" Component={Services} />
+        {/* <Route exact path="/services" Component={Services} /> */}
         <Route exact path="/projects" Component={Projects} />
         <Route exact path="/team" Component={Team} />
         <Route Component={NotFound} />
