@@ -25,6 +25,7 @@ function App() {
       <Header />
       <Routes>
         <Route exact path="/" Component={Home} />
+        <Route exact path="/dtech-services" Component={Home} />
         <Route exact path="/about" Component={About} />
         <Route exact path="/contact" Component={Contact} />
         <Route exact path="/services" Component={Services} />

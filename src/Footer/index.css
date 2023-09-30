@@ -4,7 +4,10 @@ html, body {
   body {
     position: relative
   }
-
+.footer {
+  height: auto;
+  width: 100%;
+}
 
   .upper-part{
     width: 100%;
