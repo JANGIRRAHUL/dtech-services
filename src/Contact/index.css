@@ -2,7 +2,4 @@
     @tailwind utilities;
     @tailwind base;
     @tailwind components;
-    @apply mt-24;
-    padding-top: 100.81px;
-    overflow: hidden;
 }
