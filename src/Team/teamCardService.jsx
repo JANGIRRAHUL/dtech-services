@@ -4,7 +4,10 @@ import TeamCard from "./teamCard";
 function CardService({ teamData }) {
 
     return (<>
-        <div onScroll={(e) => { console.log(e.target.scrollLeft); }} className=' max-w-2xl p-4 flex overflow-scroll hide-scroll snap-x snap-proximity card-container'>
+        <div id="scrollTeam" style={{ width: 350 }} onClick={(e) => {
+            e.target.scrollTo({ left: 0, behavior: 'smooth' })
+            console.log(e.target.scrollLeft);
+        }} className=' p-4 flex overflow-scroll hide-scroll snap-container'>
             {
                 teamData.map((eachTeam, i) => {
                     return (
