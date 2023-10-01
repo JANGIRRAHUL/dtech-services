@@ -35,5 +35,28 @@ body,html,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     border-radius: 20px;
 }
 .card-center{
-    scale: 1.05;
+    scale: 1.1;
+}
+.card-center:hover{
+    scale: 1.2;
+}
+
+.card-center{
+    animation: move 1s;
+}
+.card-left{
+    animation: move 1s;
+}
+.card-right{
+    animation: move 1s;
+}
+
+@keyframes move{
+    0%{
+        transform: translateX(280px);
+        scale: 1;
+    }
+    100%{
+        transform: translateX(0px);
+    }
 }
