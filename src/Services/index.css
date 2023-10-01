@@ -14,7 +14,7 @@ html, body {
 }
 
 .service-container{
-    background-image: url("https://res.cloudinary.com/dg4htpr73/image/upload/v1696166422/wallpaperflare.com_wallpaper_10_qxpmob.jpg");
+    background-image: url("https://res.cloudinary.com/dg4htpr73/image/upload/v1696190284/4159948_89787_syyiqi.jpg");
     height: 100vh;
     margin: 0;
     background-size: cover;
@@ -23,10 +23,21 @@ html, body {
 .card{
         width: inherit;
         height: inherit;
-        margin: 5%;
-        padding: 3%;
         border-radius: 30px;
-        background: #e0e0e0;
-        box-shadow: 5px 5px 10px #bebebe,
-                   -5px -5px 10px #ffffff;
+        background: #ffffff;
       }
+
+.left-container{
+    /* background-image: url("https://res.cloudinary.com/dg4htpr73/image/upload/v1696171041/Picture1_y82vwd.jpg"); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px 0 0 30px;    
+    /* height: 100%; */
+}
+
+.img{
+    width: 100%;
+  height: auto;
+  margin: auto;
+}
