@@ -9,7 +9,7 @@ const headerLink = [
   { name: "HOME", to: "/" },
   { name: "PROJECTS", to: "/projects" },
   { name: "TEAM", to: "/team" },
-  // { name: "SERVICES", to: "/services" },
+  { name: "SERVICES", to: "/services" },
   { name: "ABOUT", to: "/about" },
   { name: "CONTACT", to: "/contact" },
 ];

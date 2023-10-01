@@ -1,0 +1,32 @@
+html, body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative
+  }
+
+.main-container{
+    height: auto;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    
+}
+
+.service-container{
+    background-image: url("https://res.cloudinary.com/dg4htpr73/image/upload/v1696166422/wallpaperflare.com_wallpaper_10_qxpmob.jpg");
+    height: 100vh;
+    margin: 0;
+    background-size: cover;
+}
+
+.card{
+        width: inherit;
+        height: inherit;
+        margin: 5%;
+        padding: 3%;
+        border-radius: 30px;
+        background: #e0e0e0;
+        box-shadow: 5px 5px 10px #bebebe,
+                   -5px -5px 10px #ffffff;
+      }
