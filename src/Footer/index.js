@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom"
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import { faCopyright } from "@fortawesome/fontawesome-free-regular"
@@ -5,6 +7,13 @@ import { faCopyright } from "@fortawesome/fontawesome-free-regular"
 import "./index.css"
 
 const Footer = () => {
+
+  const navigate = useNavigate();
+
+  const goToContact = () => {
+    navigate("/contact");
+  }
+
   return (
     <div className="footer" style={{ fontFamily: "'Poppins',sans-serif" }}>
       <div className="upper-part d-flex flex-column justify-content-center mt-5 mb-5">
@@ -13,6 +22,9 @@ const Footer = () => {
         <div className="d-flex justify-content-center" style={{ backgroundColor: "#e1f5f0" }}>
           <p className="w-75 fs-6" style={{ color: "#555555" }}>Professional experience more the 17 years in Telecom & Signaling systems including  on air the GSM-R network of NR-1, NR-2 & KFW Project, support of design & execution of WDFC project & design & execution of MML3 (Mumbai Metro) Project</p>
         </div>
+      </div>
+      <div className="d-flex justify-content-center align-content-center mt-5 mb-5">
+        <button onClick={() => goToContact()} className="btn text-white" style={{ backgroundColor: "#0e84cc" }}>Contact Us</button>
       </div>
       <div className="footer-copyright">
         <div className="d-flex align-self-center" style={{ height: "10vh" }}>
