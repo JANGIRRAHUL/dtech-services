@@ -12,6 +12,7 @@ import Footer from "./Footer";
 import { useEffect } from "react";
 
 function App() {
+
   let link = useLocation()
   useEffect(() => {
     window.scrollTo({

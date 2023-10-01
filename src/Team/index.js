@@ -115,6 +115,8 @@ const Team = () => {
     setTeamDataArr(teamData.slice(count, limit + count));
   }, [1, count]);
 
+  useEffect(() => { document.title = "Team" }, [])
+
   return (
     <div className="team">
       <div className="flex flex-wrap p-10 m-10 bg-[#E1EAFF]">
