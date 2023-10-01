@@ -1,5 +1,63 @@
 .contactUs {
-    @tailwind utilities;
-    @tailwind base;
-    @tailwind components;
+  @tailwind utilities;
+  @tailwind base;
+  @tailwind components;
+}
+.screen-1 {
+  animation: smooth 1s;
+  z-index: 6;
+}
+@keyframes smooth {
+  0% {
+    opacity: 0;
+    transform: translateX(500px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.screen-2:hover {
+  /* animation: smooth-2 5s both; */
+  z-index: 5;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transform: rotateY(180deg);
+  transition: transform 1s;
+}
+.screen-2 {
+  /* animation: smooth-2 5s; */
+  z-index: 5;
+  transition: transform 1s;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg) ;
+}
+.screen-2::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  /* background-image: linear-gradient(270deg, rgba(0,0,0,0) 0%, #E1EAFF 100%); */
+  background-color: black;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+@keyframes smooth-2 {
+  0% {
+    /* opacity: 0; */
+    /* transform: translateY(calc(-100vh + 200px )); */
+    transform: rotateY(0deg);
+  }
+  100% {
+    /* opacity: 1; */
+    /* transform: translateY(0px); */
+    transform: rotateY(180deg);
+  }
 }
