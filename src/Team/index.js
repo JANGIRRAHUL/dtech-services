@@ -134,9 +134,7 @@ const Team = () => {
           <path strokeLinecap="round" strokeLinejoin="round" d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5" />
         </svg>
         </button> */}
-<<<<<<< HEAD
         <CardService teamData={teamData} />
-=======
         <div className='relative max-w-2xl p-5 flex overflow-scroll hide-scroll snap-x snap-proximity card-container'>
           {
             teamData.map((eachTeam, i) => {
@@ -146,7 +144,7 @@ const Team = () => {
             })
           }
         </div>
->>>>>>> d53cd26ba31978f4133f445928b7bf6eb2b377e3
+
 
         {/* <button className="bg-black ease-in-out duration-500 outline-none border-none m-4 card-center text-white px-4 py-2 rounded-md" onClick={() => { setCount(count + 1) }}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
           <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
