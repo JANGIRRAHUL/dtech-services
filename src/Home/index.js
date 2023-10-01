@@ -18,7 +18,7 @@ const Home = () => {
     <div className="main-container">
       <div className="upper-container d-flex flex-column align-items-center justify-content-center">
         <div className="d-flex justify-content-center align-items-center mt-5 fw-bold">
-          <h1 className="main-heading text-center">DTS: Precision in Telecom, Signaling, <br /> Solar.</h1>
+          <h1 className="main-heading text-center">DTS: Supply & Services of Telecom, Signaling &  <br /> Power Infra Works.</h1>
         </div>
         <div className="d-flex justify-content-center fw-semibold fs-5 mt-2">
           <ul className="d-flex flex-row justify-content-center align-content-center">
