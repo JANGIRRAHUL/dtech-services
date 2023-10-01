@@ -5,6 +5,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCopyright } from "@fortawesome/fontawesome-free-regular"
 
 import "./index.css"
+import NewPage from "./NewPage"
+
+const pages = [
+  {name:"HOME", link:"/"},
+  {name:"PROJECTS", link:"/projects"},
+  {name:"SERVICES", link:"/services"},
+  {name:"ABOUT US", link:"/about"},
+]
 
 const Footer = () => {
 
@@ -30,6 +38,11 @@ const Footer = () => {
       </div>
       <div className="d-flex justify-content-center align-content-center mt-5 mb-5">
         <button onClick={() => goToContact()} className="btn text-white" style={{ backgroundColor: "#0e84cc" }}>Contact Us</button>
+      </div>
+      <div className="d-flex justify-content-center gap-5 mb-3" style={{color: "#e1f5f0"}}>
+        {pages.map((v,i) => {
+          return(<NewPage key={i} props={v}/>)
+        })}
       </div>
       <div className="footer-copyright">
         <div className="d-flex align-self-center" style={{ height: "10vh" }}>

@@ -23,9 +23,10 @@ const Home = () => {
         <div className="d-flex justify-content-center fw-semibold fs-5 mt-2">
           <ul className="d-flex flex-row justify-content-center align-content-center">
             <p className="mx-3">Drive Efficiency</p>
-            <p className="mx-3">Automate</p>
+            <p className="mx-3">Automate Process</p>
             <p className="mx-3">Reduce Risk</p>
             <p className="mx-3">Improve Service</p>
+            <p className="mx-3">Reduce Cost</p>
           </ul>
         </div>
       </div>
