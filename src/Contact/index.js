@@ -37,8 +37,8 @@ const Contact = () => {
       <div className="contactUs">
         <div className="w-screen flex justify-center items-center">
           <div className="flex flex-col">
-            <div className="flex justify-center items-center bg-[url('./../images/bg1.jpg')] bg-cover h-[calc(100vh-100px)] w-screen">
-              <div className="h-72 w-[480px] p-10 bg-black rounded-xl shadow-2xl shadow-black flex justify-between items-center">
+            <div className=" flex justify-center items-center bg-[url('./../images/bg1.jpg')] bg-cover h-[calc(100vh-82px)] w-screen">
+              <div className=" screen-1 h-72 w-[480px] p-10 bg-black rounded-xl shadow-2xl shadow-black flex justify-between items-center">
                 <div className="flex items-center gap-3">
                   <div className="">
                     <img className="h-16 w-16 rounded-full" src={logoImg} alt="" />
@@ -47,18 +47,18 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            <div className="flex justify-center items-center bg-[url('./../images/bg2.jpg')] bg-cover h-[calc(100vh-100px)] w-screen">
-              <div className="h-72 w-[480px] p-10 bg-white rounded-xl shadow-2xl  shadow-black flex justify-between border-black border">
+            <div className="flex justify-center items-center bg-[url('./../images/bg2.jpg')] bg-cover h-[calc(100vh-82px)] w-screen">
+              <div className="screen-2 h-72 w-[480px] p-10 bg-white rounded-xl shadow-2xl  shadow-black flex justify-between border-black border">
                 <div className="h-full flex flex-col justify-between">
                   <div>
                     <h1 className="font-thin text-3xl"><span className="font-bold">UTTAM</span> KUMAR</h1>
-                    <p className="-mt-2">Founder D-Tech Services</p>
-                    <div className="flex items-center -mt-2">
+                    <p className="mb-2">Founder D-Tech Services</p>
+                    <div className="flex items-center">
                       <div className="bg-black h-1 w-8 rounded-l-full"></div>
                       <div className="bg-black h-0.5 w-44 rounded-r-full"></div>
                     </div>
                   </div>
-                  <div className="flex flex-col gap-1">
+                  <div className="flex flex-col gap-2.5">
                     {
                       contactInfo.map((v, i) => {
                         return (
@@ -76,7 +76,7 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            <div className="flex justify-center items-center bg-[url('./../images/bg3.jpg')] bg-cover h-[calc(100vh-100px)] w-screen">
+            <div className="flex justify-center items-center bg-[url('./../images/bg3.jpg')] bg-cover h-[calc(100vh-82px)] w-screen">
               <div className="w-[480px] border border-black bg-white p-8 py-14 rounded-lg shadow-xl  shadow-black">
                 <h1 className="text-2xl text-center">WE ARE HERE TO HELP YOU !</h1>
                 <div className="">
