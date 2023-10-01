@@ -41,6 +41,18 @@ body,html,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     scale: 1.2;
 }
 
+.card-container::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: static;
+    /* background-image: linear-gradient(270deg, rgba(0,0,0,0) 0%, #E1EAFF 100%); */
+    background-color: black;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+}
+
 .card-center{
     animation: move 1s;
 }
@@ -59,4 +71,8 @@ body,html,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     100%{
         transform: translateX(0px);
     }
+}
+
+.hide-scroll::-webkit-scrollbar {
+    display: none;
 }

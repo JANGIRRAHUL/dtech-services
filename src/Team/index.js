@@ -109,30 +109,36 @@ let teamData = [
 const Team = () => {
   const [teamDataArr, setTeamDataArr] = useState([])
   const [count, setCount] = useState(0)
+  document.title = "Team"
 
   let limit = 3;
   useEffect(() => {
     setTeamDataArr(teamData.slice(count, limit + count));
-  }, [1, count]);
+    
+    console.log(window.scrollX);
+  }, [window.screenY]);
 
-  useEffect(() => { document.title = "Team" }, [])
 
   return (
     <div className="team">
-      <div className="flex flex-wrap p-10 m-10 bg-[#E1EAFF]">
-        <button className="bg-black ease-in-out duration-500 outline-none border-none m-4 card-center text-white px-4 py-2 rounded-md" onClick={() => { setCount(count - 1) }}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+      <div className="flex justify-center items-center p-10 m-10 bg-[#E1EAFF] relative">
+        {/* <button className="bg-black ease-in-out duration-500 outline-none border-none m-4 card-center text-white px-4 py-2 rounded-md" onClick={() => { setCount(count - 1) }}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
           <path strokeLinecap="round" strokeLinejoin="round" d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5" />
         </svg>
-        </button>
-        {teamDataArr.map((eachTeam, i) => {
-          return (
-            <TeamCard key={i} eachTeam={eachTeam} i={i} />
-          )
-        })}
+        </button> */}
+        <div className='relative max-w-2xl p-5 flex overflow-scroll hide-scroll snap-x snap-proximity card-container'>
+          {
+          teamData.map((eachTeam, i) => {
+            return (
+              <TeamCard key={i} eachTeam={eachTeam} i={i} />
+            )
+          })
+          }
+        </div>
 
-        <button className="bg-black ease-in-out duration-500 outline-none border-none m-4 card-center text-white px-4 py-2 rounded-md" onClick={() => { setCount(count + 1) }}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+        {/* <button className="bg-black ease-in-out duration-500 outline-none border-none m-4 card-center text-white px-4 py-2 rounded-md" onClick={() => { setCount(count + 1) }}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
           <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
-        </svg></button>
+        </svg></button> */}
       </div>
     </div>)
 };
