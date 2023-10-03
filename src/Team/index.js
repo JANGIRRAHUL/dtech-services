@@ -116,6 +116,7 @@ let autoScroll = setInterval(() => {
   console.log(autoScroll);
 }, 3000)
 
+
 const Team = () => {
   const [cardLocation, setCardLocation] = useState(0)
   const [cardScrollLocation, setCardScrollLocation] = useState(0)
