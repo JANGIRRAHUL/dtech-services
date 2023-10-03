@@ -18,7 +18,7 @@ body,html,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     @tailwind components;
 
     @apply mt-24;
-    margin-top: 86px;
+    margin-top: 0px;
 }
 
 .card-left::after{
@@ -60,9 +60,6 @@ body,html,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     border-radius: 20px;
 }
 
-.card-center{
-    animation: move 1s;
-}
 .card-left{
     animation: move 1s;
 }

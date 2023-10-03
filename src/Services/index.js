@@ -241,7 +241,7 @@ const Services = () => {
       </div>
 
       <div className="d-flex flex-column" style={{ backgroundColor: "#e1eaff" }}>
-        <div className="text-center p-5 fw-bold" ><h1 className="fw-bold" style={{ fontSize: 78 }}>SPECIALIZATION</h1></div>
+        <div className="text-center p-5 fw-bold" ><h1 className="fw-bold" style={{ fontSize: '10vw' }}>SPECIALIZATION</h1></div>
 
         {serviceData.map((v, i) => {
           return (<ServiceCard key={i} prop={v} />)

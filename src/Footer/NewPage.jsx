@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom"
+
 const NewPage = ({props}) => {
     return(
-        <a className="text-decoration-none" href={props.link}>{props.name}</a>
+        <Link className="text-decoration-none" to={props.link}>{props.name}</Link>
     )
 }
 

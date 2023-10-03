@@ -21,7 +21,7 @@ const Home = () => {
           <h1 className="main-heading text-center">DTS: Supply & Services of Telecom, Signaling &  <br /> Power Infra Works.</h1>
         </div>
         <div className="d-flex justify-content-center fw-semibold fs-5 mt-2">
-          <ul className="d-flex flex-row justify-content-center align-content-center">
+          <ul className="d-flex flex-column flex-lg-row justify-content-center align-content-center">
             <p className="mx-3">Drive Efficiency</p>
             <p className="mx-3">Automate Process</p>
             <p className="mx-3">Reduce Risk</p>
@@ -41,8 +41,8 @@ const Home = () => {
           Metros, Factories, Offices, and more.
         </p>
       </div>
-      <div className="d-flex flex-wrap justify-content-center p-5" style={{ height: "100%" }}>
-        <div className="lower-container fs-3 fw-bold m-3 d-flex justify-content-center align-content-center" style={{ width: "25vw", height: "45vh" }}>
+      <div className="d-flex flex-wrap justify-content-center p-2" style={{ height: "100%" }}>
+        <div className="lower-container fs-6 m-3 p-3 text-white fw-bold d-flex justify-content-center align-content-center bg-warning rounded" style={{ width: "20rem", aspectRatio: '9/6' }}>
           <p className="text-left mx-3">
             DTech Services (DTS) stands out as a complete solution partner that integrates Telecom, Signaling, and Power Infrastructure services.
           </p>

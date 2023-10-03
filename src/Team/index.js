@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import './index.css';
 import { useState } from 'react';
 import CardService from './teamCardService';
@@ -9,7 +8,7 @@ let teamData = [
     name: 'Kiran',
     designation: 'CEO',
     description: 'He is the CEO of our company',
-    imgUrl: 'https://assets.ccbp.in/frontend/react-js/ceo-img.png',
+    imgUrl: 'https://xsgames.co/randomusers/avatar.php?g=male',
     message: 'Our CEO, Kiran, saw a huge opportunity in the market and started our company in 2013',
   },
   {
@@ -17,7 +16,7 @@ let teamData = [
     name: 'Rajesh',
     designation: 'COO',
     description: 'He is the COO of our company',
-    imgUrl: 'https://assets.ccbp.in/frontend/react-js/coo-img.png',
+    imgUrl: 'https://xsgames.co/randomusers/avatar.php?g=male',
     message: 'Rajesh, our COO, has more than 10 years of experience in the industry',
 
   },
@@ -26,7 +25,7 @@ let teamData = [
     name: 'Ramesh',
     designation: 'CTO',
     description: 'He is the CTO of our company',
-    imgUrl: 'https://assets.ccbp.in/frontend/react-js/cto-img.png',
+    imgUrl: 'https://xsgames.co/randomusers/avatar.php?g=male',
     message: 'Ramesh, our CTO, is a tech guru and has 20 years of experience in the field',
   },
   {
@@ -34,7 +33,7 @@ let teamData = [
     name: 'Radhika',
     designation: 'HR',
     description: 'She is the HR of our company',
-    imgUrl: 'https://assets.ccbp.in/frontend/react-js/hr-img.png',
+    imgUrl: 'https://xsgames.co/randomusers/avatar.php?g=male',
     message: 'Radhika, our HR, has 10 years of experience in the industry',
 
   },
@@ -43,7 +42,7 @@ let teamData = [
     name: 'Sonia',
     designation: 'Manager',
     description: 'She is the Manager of our company',
-    imgUrl: 'https://assets.ccbp.in/frontend/react-js/manager-img.png',
+    imgUrl: 'https://xsgames.co/randomusers/avatar.php?g=male',
     message: 'Sonia, our Manager, has 15 years of experience in the industry',
   },
   {
@@ -51,7 +50,7 @@ let teamData = [
     name: 'Rahul',
     designation: 'Manager',
     description: 'He is the Manager of our company',
-    imgUrl: 'https://assets.ccbp.in/frontend/react-js/manager-img.png',
+    imgUrl: 'https://xsgames.co/randomusers/avatar.php?g=male',
     message: 'Rahul, our Manager, has 15 years of experience in the industry',
   },
   {
@@ -59,7 +58,7 @@ let teamData = [
     name: 'Rohit',
     designation: 'Manager',
     description: 'He is the Manager of our company',
-    imgUrl: 'https://assets.ccbp.in/frontend/react-js/manager-img.png',
+    imgUrl: 'https://xsgames.co/randomusers/avatar.php?g=male',
     message: 'Rohit, our Manager, has 15 years of experience in the industry',
   },
   {
@@ -67,7 +66,7 @@ let teamData = [
     name: 'Rani',
     designation: 'Manager',
     description: 'She is the Manager of our company',
-    imgUrl: 'https://assets.ccbp.in/frontend/react-js/manager-img.png',
+    imgUrl: 'https://xsgames.co/randomusers/avatar.php?g=male',
     message: 'Rani, our Manager, has 15 years of experience in the industry',
   },
   {
@@ -75,7 +74,7 @@ let teamData = [
     name: 'Raj',
     designation: 'Manager',
     description: 'He is the Manager of our company',
-    imgUrl: 'https://assets.ccbp.in/frontend/react-js/manager-img.png',
+    imgUrl: 'https://xsgames.co/randomusers/avatar.php?g=male',
     message: 'Raj, our Manager, has 15 years of experience in the industry',
   },
   {
@@ -83,7 +82,7 @@ let teamData = [
     name: 'Rajeshwari',
     designation: 'Manager',
     description: 'She is the Manager of our company',
-    imgUrl: 'https://assets.ccbp.in/frontend/react-js/manager-img.png',
+    imgUrl: 'https://xsgames.co/randomusers/avatar.php?g=male',
     message: 'Rajeshwari, our Manager, has 15 years of experience in the industry',
   },
   {
@@ -91,7 +90,7 @@ let teamData = [
     name: 'Rajendra',
     designation: 'Manager',
     description: 'He is the Manager of our company',
-    imgUrl: 'https://assets.ccbp.in/frontend/react-js/manager-img.png',
+    imgUrl: 'https://xsgames.co/randomusers/avatar.php?g=male',
     message: 'Rajendra, our Manager, has 15 years of experience in the industry',
   },
   {
@@ -99,31 +98,70 @@ let teamData = [
     name: 'Rajkumar',
     designation: 'Manager',
     description: 'He is the Manager of our company',
-    imgUrl: 'https://assets.ccbp.in/frontend/react-js/manager-img.png',
+    imgUrl: 'https://xsgames.co/randomusers/avatar.php?g=male',
     message: 'Rajkumar, our Manager, has 15 years of experience in the industry',
   }
 ]
 
-
-let i = 0
+let count = 0;
+let abc = null;
+let autoScroll = setInterval(() => {
+  if (!abc) return;
+  abc(count)
+  if (count === teamData.length - 1) {
+    count = 0;
+  } else {
+    count++;
+  }
+  console.log(autoScroll);
+}, 3000)
 
 const Team = () => {
+  const [cardLocation, setCardLocation] = useState(0)
+  const [cardScrollLocation, setCardScrollLocation] = useState(0)
+  let el = document.getElementById('scrollTeam');
   document.title = "Team"
+
   function scrollLeft(i) {
-    let el = document.getElementById('scrollTeam');
-    console.log(el);
-    if (el) { el.scrollTo({ left: (i * 357) || 0, behavior: 'smooth' }) }
+    setCardLocation(i)
+    setCardScrollLocation(i * 456 + 27)
+    if (el) { el.scrollTo({ left: (i * 456 + 27) || 0, behavior: 'smooth' }) }
   }
-  
-  let autoScroll = setTimeout(() => {
-    scrollLeft(i)
-    console.log(autoScroll);
-    if (teamData.length - 1 === i) {
-      i = 0
-    } else {
-      i++
+  abc = scrollLeft;
+
+  if (el) {
+    el.onmouseover = () => {
+      clearInterval(autoScroll);
+      
     }
-  }, 5000)
+
+    el.ontouchstart = () => {
+      clearInterval(autoScroll);
+    }
+    el.ontouchend = () => {
+      clearInterval(autoScroll);
+      autoScroll = setInterval(() => {
+        scrollLeft(count)
+        if (count === teamData.length - 1) {
+          count = 0;
+        } else {
+          count++;
+        }
+      }, 3000)
+    }
+
+    el.onmouseleave = () => {
+      clearInterval(autoScroll);
+      autoScroll = setInterval(() => {
+        scrollLeft(count)
+        if (count === teamData.length - 1) {
+          count = 0;
+        } else {
+          count++;
+        }
+      }, 3000)
+    }
+  }
 
 
 
@@ -138,20 +176,20 @@ const Team = () => {
         </div>
       </div>
       <div className='team'>
-        <div className=' bg-[#E1EAFF]'>
+        <div className=' bg-[#E1EAFF] p-6'>
           <div className="flex justify-center items-center">
-            <CardService teamData={teamData} />
+            <CardService teamData={teamData} cardLocationData={{ cardLocation, cardScrollLocation }} />
           </div>
           <div>
             <div className="flex justify-center items-center">
-              <div>
+              <div className='flex'>
                 {
                   teamData.map((eachTeam, i) => {
                     return (
-                      <button onClick={() => {
+                      <button key={i} onClick={() => {
                         scrollLeft(i);
-                        clearInterval(autoScroll)
-                      }} className={`${i === 5 ? 'bg-gray-700' : "bg-green-500"} hover:bg-gray-700 rounded-full border-none m-0.5 p-0.5 w-4 h-2`}></button>
+                        clearInterval(autoScroll);
+                      }} className={`${i === cardLocation ? 'bg-gray-700' : "bg-green-500"} hover:bg-gray-700 rounded-full border-none m-0.5 p-0.5 w-1 h-1`}></button>
                     )
                   })
                 }
