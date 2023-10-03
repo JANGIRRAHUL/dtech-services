@@ -1,7 +1,7 @@
 function TeamCard({ eachTeam, i }) {
     
     return (<>
-        <div className={`mx-5 flex rounded-[20px] min-w-[260px] aspect-video  ${i == 0 ? 'card-right bg-[#e0e0ff]' : i >= 2 ? 'card-left bg-[#e0e0ff] z-0' : 'card-center bg-white z-10'} relative ease-in-out duration-500 snap-center`}>
+        <div className={`mx-5 flex rounded-[20px] min-w-[260px] aspect-video bg-white card-center relative ease-in-out duration-500 snap-center`}>
             <div className="bg-[url('./../images/bg1.jpg')] aspect-square w-20 bg-cover  rounded-l-[20px]"></div>
             <div key={eachTeam.id}>
                 <div className="p-2 pl-2">

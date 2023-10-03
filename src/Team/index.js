@@ -105,19 +105,27 @@ let teamData = [
 ]
 
 
+let i = 0
 
 
 const Team = () => {
-  const [teamDataArr, setTeamDataArr] = useState([])
-  const [count, setCount] = useState(0)
   document.title = "Team"
+  function scrollLeft(i) {
+    let el = document.getElementById('scrollTeam');
+    console.log(el);
+    if (el) { el.scrollTo({ left: (i * 357) || 0, behavior: 'smooth' }) }
+  }
+  
+  let autoScroll = setTimeout(() => {
+    scrollLeft(i)
+    console.log(autoScroll);
+    if (teamData.length - 1 === i) {
+      i = 0
+    } else {
+      i++
+    }
+  }, 5000)
 
-  let limit = 3;
-  useEffect(() => {
-    setTeamDataArr(teamData.slice(count, limit + count));
-
-    console.log(window.scrollX);
-  }, [window.screenY]);
 
 
   return (
@@ -141,7 +149,10 @@ const Team = () => {
                 {
                   teamData.map((eachTeam, i) => {
                     return (
-                      <button className='rounded-full border-none m-2 p-2 w-10'>{i}</button>
+                      <button onClick={() => {
+                        scrollLeft(i);
+                        clearInterval(autoScroll)
+                      }} className={`${i === 5 ? 'bg-gray-700' : "bg-green-500"} hover:bg-gray-700 rounded-full border-none m-0.5 p-0.5 w-4 h-2`}></button>
                     )
                   })
                 }
