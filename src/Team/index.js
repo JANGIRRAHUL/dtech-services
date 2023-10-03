@@ -105,6 +105,10 @@ let teamData = [
 ]
 
 
+function abc() [
+  undefined, "abc"
+]
+
 
 const Team = () => {
   const [teamDataArr, setTeamDataArr] = useState([])
@@ -120,7 +124,7 @@ const Team = () => {
 
 
   return (
-    <div className="team">
+    <div className="">
       <div className="team-container d-flex flex-column align-items-center justify-content-center text-white">
         <div className="d-flex justify-content-center align-items-center mt-5 fw-bolder">
           <h1 className="main-heading">Our People</h1>
@@ -129,26 +133,25 @@ const Team = () => {
           </p>
         </div>
       </div>
-      <div className="flex justify-center items-center p-10 m-10 bg-[#E1EAFF] relative">
-        {/* <button className="bg-black ease-in-out duration-500 outline-none border-none m-4 card-center text-white px-4 py-2 rounded-md" onClick={() => { setCount(count - 1) }}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5" />
-        </svg>
-        </button> */}
-        <CardService teamData={teamData} />
-        <div className='relative max-w-2xl p-5 flex overflow-scroll hide-scroll snap-x snap-proximity card-container'>
-          {
-            teamData.map((eachTeam, i) => {
-              return (
-                <TeamCard key={i} eachTeam={eachTeam} i={i} />
-              )
-            })
-          }
+      <div className='team'>
+        <div className=' bg-[#E1EAFF]'>
+          <div className="flex justify-center items-center">
+            <CardService teamData={teamData} />
+          </div>
+          <div>
+            <div className="flex justify-center items-center">
+              <div>
+                {
+                  teamData.map((eachTeam, i) => {
+                    return (
+                      <button className='rounded-full border-none m-2 p-2 w-10'>{i}</button>
+                    )
+                  })
+                }
+              </div>
+            </div>
+          </div>
         </div>
-
-
-        {/* <button className="bg-black ease-in-out duration-500 outline-none border-none m-4 card-center text-white px-4 py-2 rounded-md" onClick={() => { setCount(count + 1) }}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
-        </svg></button> */}
       </div>
     </div>)
 };
