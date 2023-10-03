@@ -105,9 +105,6 @@ let teamData = [
 ]
 
 
-function abc() [
-  undefined, "abc"
-]
 
 
 const Team = () => {
