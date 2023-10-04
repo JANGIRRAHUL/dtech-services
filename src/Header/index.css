@@ -35,3 +35,22 @@ html, body {
 }
 
 
+
+@media screen and (min-width: 576px) { 
+  .desktop-view{
+    display: flex;
+  }
+  .mobile-view{
+    display: flex;
+    z-index: 100;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .mobile-view{
+    display: none;
+  }
+  .desktop-view{
+    display: flex;
+  }
+}
