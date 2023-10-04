@@ -2,7 +2,7 @@ function TeamCard({ eachTeam, i, isReachingEnd }) {
     return (<>
         <div className={` ${i === (eachTeam.id - 1) && isReachingEnd ? 'card-center opacity-1' : ' '
             } mx-5 flex rounded-[20px] min-w-[360px] aspect-video bg-white relative ease-in-out duration-500 snap-center`}>
-            <div className="bg-[url('./../images/bg2.jpg')] aspect-square w-36 bg-cover rounded-l-[20px]"></div>
+            <div style={{backgroundImage: `url("${eachTeam.imgUrl}")`}} className={` aspect-square w-36 bg-cover rounded-l-[20px]`}></div>
             <div className="">
                 <div className="p-4">
                     <h1 className="text-xl text-blue-700 mb-0.5">{eachTeam.name}</h1>

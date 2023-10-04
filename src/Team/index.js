@@ -8,7 +8,7 @@ let teamData = [
     name: 'Kiran',
     designation: 'CEO',
     description: 'He is the CEO of our company',
-    imgUrl: 'https://xsgames.co/randomusers/avatar.php?g=male',
+    imgUrl: 'https://images.freeimages.com/images/large-previews/e0e/business-man-1238440.jpg',
     message: 'Our CEO, Kiran, saw a huge opportunity in the market and started our company in 2013',
   },
   {
@@ -16,7 +16,7 @@ let teamData = [
     name: 'Rajesh',
     designation: 'COO',
     description: 'He is the COO of our company',
-    imgUrl: 'https://xsgames.co/randomusers/avatar.php?g=male',
+    imgUrl: 'https://images.freeimages.com/images/large-previews/a9f/office-1526275.jpg',
     message: 'Rajesh, our COO, has more than 10 years of experience in the industry',
 
   },
@@ -25,7 +25,7 @@ let teamData = [
     name: 'Ramesh',
     designation: 'CTO',
     description: 'He is the CTO of our company',
-    imgUrl: 'https://xsgames.co/randomusers/avatar.php?g=male',
+    imgUrl: 'https://images.freeimages.com/images/large-previews/67c/man-1438092.jpg',
     message: 'Ramesh, our CTO, is a tech guru and has 20 years of experience in the field',
   },
   {
@@ -33,7 +33,7 @@ let teamData = [
     name: 'Radhika',
     designation: 'HR',
     description: 'She is the HR of our company',
-    imgUrl: 'https://xsgames.co/randomusers/avatar.php?g=male',
+    imgUrl: 'https://images.freeimages.com/images/large-previews/7b7/woman-1431543.jpg',
     message: 'Radhika, our HR, has 10 years of experience in the industry',
 
   },
@@ -42,7 +42,7 @@ let teamData = [
     name: 'Sonia',
     designation: 'Manager',
     description: 'She is the Manager of our company',
-    imgUrl: 'https://xsgames.co/randomusers/avatar.php?g=male',
+    imgUrl: 'https://images.freeimages.com/images/large-previews/e7f/girl-1431941.jpg',
     message: 'Sonia, our Manager, has 15 years of experience in the industry',
   },
   {
@@ -50,7 +50,7 @@ let teamData = [
     name: 'Rahul',
     designation: 'Manager',
     description: 'He is the Manager of our company',
-    imgUrl: 'https://xsgames.co/randomusers/avatar.php?g=male',
+    imgUrl: 'https://images.freeimages.com/images/large-previews/b61/reading-man-1438732.jpg',
     message: 'Rahul, our Manager, has 15 years of experience in the industry',
   },
   {
@@ -58,7 +58,7 @@ let teamData = [
     name: 'Rohit',
     designation: 'Manager',
     description: 'He is the Manager of our company',
-    imgUrl: 'https://xsgames.co/randomusers/avatar.php?g=male',
+    imgUrl: 'https://images.freeimages.com/images/large-previews/28f/man-with-laptop-1238347.jpg',
     message: 'Rohit, our Manager, has 15 years of experience in the industry',
   },
   {
@@ -66,7 +66,7 @@ let teamData = [
     name: 'Rani',
     designation: 'Manager',
     description: 'She is the Manager of our company',
-    imgUrl: 'https://xsgames.co/randomusers/avatar.php?g=male',
+    imgUrl: 'https://images.freeimages.com/images/large-previews/de4/woman-1438448.jpg',
     message: 'Rani, our Manager, has 15 years of experience in the industry',
   },
   {
@@ -74,7 +74,7 @@ let teamData = [
     name: 'Raj',
     designation: 'Manager',
     description: 'He is the Manager of our company',
-    imgUrl: 'https://xsgames.co/randomusers/avatar.php?g=male',
+    imgUrl: 'https://images.freeimages.com/images/large-previews/a9f/office-1526275.jpg',
     message: 'Raj, our Manager, has 15 years of experience in the industry',
   },
   {
@@ -82,7 +82,7 @@ let teamData = [
     name: 'Rajeshwari',
     designation: 'Manager',
     description: 'She is the Manager of our company',
-    imgUrl: 'https://xsgames.co/randomusers/avatar.php?g=male',
+    imgUrl: 'https://images.freeimages.com/images/large-previews/187/people-4-1539332.jpg',
     message: 'Rajeshwari, our Manager, has 15 years of experience in the industry',
   },
   {
@@ -90,7 +90,7 @@ let teamData = [
     name: 'Rajendra',
     designation: 'Manager',
     description: 'He is the Manager of our company',
-    imgUrl: 'https://xsgames.co/randomusers/avatar.php?g=male',
+    imgUrl: 'https://images.freeimages.com/images/large-previews/a9f/office-1526275.jpg',
     message: 'Rajendra, our Manager, has 15 years of experience in the industry',
   },
   {
@@ -98,24 +98,39 @@ let teamData = [
     name: 'Rajkumar',
     designation: 'Manager',
     description: 'He is the Manager of our company',
-    imgUrl: 'https://xsgames.co/randomusers/avatar.php?g=male',
+    imgUrl: 'https://images.freeimages.com/images/large-previews/4f3/office-1-1515115.jpg',
     message: 'Rajkumar, our Manager, has 15 years of experience in the industry',
   }
 ]
 
 let count = 0;
 let abc = null;
-let autoScroll = setInterval(() => {
-  if (!abc) return;
-  abc(count)
-  if (count === teamData.length - 1) {
-    count = 0;
-  } else {
-    count++;
-  }
-  console.log(autoScroll);
-}, 3000)
+let autoScroll = null
+function startAutoScroll(time = 3000, a = count) {
+  if (a !== count) { count = a; };
+  autoScroll = setInterval(() => {
+    if (!abc) return;
+    abc(a)
+    if (a === teamData.length - 1) {
+      a = 0;
+      count = 0;
+    } else {
+      a++;
+      count++;
+    }
+  }, time)
+}
+startAutoScroll();
 
+
+
+let timeot = null;
+function stopAutoScroll(i = count) {
+  timeot = setTimeout(() => {
+    startAutoScroll(3000, i)
+    clearTimeout(timeot);
+  }, 7000);
+}
 
 const Team = () => {
   const [cardLocation, setCardLocation] = useState(0)
@@ -133,34 +148,20 @@ const Team = () => {
   if (el) {
     el.onmouseover = () => {
       clearInterval(autoScroll);
-      
-    }
 
+    }
     el.ontouchstart = () => {
       clearInterval(autoScroll);
     }
     el.ontouchend = () => {
       clearInterval(autoScroll);
-      autoScroll = setInterval(() => {
-        scrollLeft(count)
-        if (count === teamData.length - 1) {
-          count = 0;
-        } else {
-          count++;
-        }
-      }, 3000)
+      startAutoScroll();
     }
 
     el.onmouseleave = () => {
       clearInterval(autoScroll);
-      autoScroll = setInterval(() => {
-        scrollLeft(count)
-        if (count === teamData.length - 1) {
-          count = 0;
-        } else {
-          count++;
-        }
-      }, 3000)
+      clearTimeout(timeot);
+      stopAutoScroll();
     }
   }
 
@@ -188,8 +189,12 @@ const Team = () => {
                   teamData.map((eachTeam, i) => {
                     return (
                       <button key={i} onClick={() => {
-                        scrollLeft(i);
                         clearInterval(autoScroll);
+                        scrollLeft(i);
+                        clearTimeout(timeot);
+                        stopAutoScroll(i)
+
+                      }} onMouseLeave={() => {
                       }} className={`${i === cardLocation ? 'bg-gray-700' : "bg-green-500"} hover:bg-gray-700 rounded-full border-none m-0.5 p-0.5 w-1 h-1`}></button>
                     )
                   })
