@@ -42,7 +42,7 @@ const Home = () => {
         </p>
       </div>
       <div className="d-flex flex-wrap justify-content-center p-2" style={{ height: "100%" }}>
-        <div className="lower-container fs-6 m-3 p-3 text-white fw-bold d-flex justify-content-center align-content-center bg-warning rounded" style={{ width: "20rem", aspectRatio: '9/6' }}>
+        <div className="lower-container m-3 p-3 fw-bold d-flex justify-content-center align-content-center rounded shadow" style={{ width: "25rem", aspectRatio: '9/6', color: "#0e84cc", fontSize: "1.5rem" }}>
           <p className="text-left mx-3">
             DTech Services (DTS) stands out as a complete solution partner that integrates Telecom, Signaling, and Power Infrastructure services.
           </p>
