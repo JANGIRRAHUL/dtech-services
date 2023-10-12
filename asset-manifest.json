@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/dtech-services/static/css/main.e202ddc0.css",
-    "main.js": "/dtech-services/static/js/main.654b5ed8.js",
-    "static/media/7387.jpg": "/dtech-services/static/media/7387.df4290f59b49bc13a89a.jpg",
+    "main.css": "/dtech-services/static/css/main.cc33eea2.css",
+    "main.js": "/dtech-services/static/js/main.daa12e1c.js",
+    "static/media/bg3.jpg": "/dtech-services/static/media/bg3.f2114abf53841293c4bd.jpg",
+    "static/media/bg1.jpg": "/dtech-services/static/media/bg1.c3613a4c702f903a97aa.jpg",
+    "static/media/bg2.jpg": "/dtech-services/static/media/bg2.195eb26383eed825082f.jpg",
     "static/media/earth-globe-with-continents-maps_44536.png": "/dtech-services/static/media/earth-globe-with-continents-maps_44536.59d30a5486cfb34922b4.png",
     "index.html": "/dtech-services/index.html",
-    "main.e202ddc0.css.map": "/dtech-services/static/css/main.e202ddc0.css.map",
-    "main.654b5ed8.js.map": "/dtech-services/static/js/main.654b5ed8.js.map"
+    "main.cc33eea2.css.map": "/dtech-services/static/css/main.cc33eea2.css.map",
+    "main.daa12e1c.js.map": "/dtech-services/static/js/main.daa12e1c.js.map"
   },
   "entrypoints": [
-    "static/css/main.e202ddc0.css",
-    "static/js/main.654b5ed8.js"
+    "static/css/main.cc33eea2.css",
+    "static/js/main.daa12e1c.js"
   ]
 }
